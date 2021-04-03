@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <title>Speech to Text</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+		<style>
+			body
+			{
+
+               justify-content: center;
+              }
+#bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: black;*/
+}
+
+.bar {
+    background:red ;  #52467b
+    bottom: 1px;
+    height: 3px;
+    width: 10px;
+    margin: 0px 4px;
+    border-radius: 5px;
+    animation: sound 0ms -600ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+       opacity: .35;
+        height: 3px;
+    }
+    100% {
+        opacity: 1;
+        height: 70px;
+    }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 15px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 29px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 43px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 57px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 71px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 85px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 99px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 113px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 127px; animation-duration: 442ms; }
+			button {
+			    padding:10px;
+			    background-color:#6a67ce;
+			    color: #FFFFFF;
+			    border: 0px;
+			    cursor:pointer;
+			    border-radius: 5px;
+			}
+			#output {
+			    background-color:white;
+                color:black;
+			    #F9F9F9
+			    padding:10px;
+			    width: 100%;
+			    margin-top:20px;
+			    line-height:30px;
+			}
+			.hide {
+			    display:none;
+			}
+			.show {
+			    display:block;
+			}
+			html, body {
+    height: 100%;
+}
+    .container1 { color:black;}
+    .dark {
+    	background: black; color:white;
+    }
+</style>
+   <body class="dark">
+    <div class="jumbotron mb-0 pt-4 pb-4" style="background-color:#6a67ce">
+  <div class="container1">
+    <center><h1 class="display" class="h1">SPEAK OUT<h1></center>
+  </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="#">Suicide Analysis</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+   <div class="navbar-nav">
+     <a class="nav-item nav-link active" href="Suicide Analysis.html">Home <span class="sr-only">(current)</span></a>
+     <a class="nav-item nav-link active" href="About.html" >About</a>
+     <a class="nav-item nav-link active" href="speech to text.html" >Speak</a>
+     <a class="nav-item nav-link active" href="depression_test.html" >Depression Test</a>
+     <a class="nav-item nav-link active" href="Helpline.html">Helpline</a>
+   </div>
+   </div>
+   </nav>
+
+    <div class="container">
+    	<p><h4>We would to like hear your thoughts and feelings and this might help us to tell how much depressed or stressed and do you have an any suicidal thoughts.This Analysis will help you to get back on right track.</h4></p>
+    	<center><p><h4><b>So,Why waiting Share you thoughts!!</b></h4></p></center>
+        <center><p><h4><b>Click on the below button and speak something</b></h4></p>
+        </center>
+        <br>
+        <p><center><button type="button" onclick="runSpeechRecognition()">Speak
+        </button></center> &nbsp; <span id="action"></span></p>
+        <br>
+        <div id="output" class="hide"></div>
+		<script>
+			/* JS comes here */
+		    function runSpeechRecognition() {
+		        // get output div reference
+		        var output = document.getElementById("output");
+		        // get action element reference
+		        var action = document.getElementById("action");
+                // new speech recognition object
+                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
+
+                // This runs when the speech recognition service starts
+                recognition.onstart = function() {
+                    action.innerHTML = "<small>listening, please speak...</small>";
+                };
+
+                recognition.onspeechend = function() {
+                    action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                    recognition.stop();
+                }
+
+                // This runs when the speech recognition service returns result
+                recognition.onresult = function(event) {
+                    var transcript = event.results[0][0].transcript;
+                    var confidence = event.results[0][0].confidence;
+                    output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
+                    output.classList.remove("hide");
+                };
+
+                 // start recognition
+                 recognition.start();
+	        }
+		</script>
+			<div id="bars">
+				<img src="user.png" height="400px" width="400px">
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				   <img src="System.png" height="400px" width="400px">
+			</div>
+			<br>
+			<br>
+	</div>
+	 <center><p><h4><b>Thank You For Speaking !</b></h4></p>
+	</body>
+  <div class="footer-copyright text-center py-3 bg-white text-dark">© 2020 Copyright:
+    <a href="http://www.aasra.info/"> National Suicide Care.com</a>
+</footer>
+</html>
