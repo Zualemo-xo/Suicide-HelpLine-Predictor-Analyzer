@@ -1,6 +1,6 @@
 # **Suicide-HelpLine**
 ## Deployed Link
-```https://zualemo-xo.github.io/Suicide-HelpLine/Suicide%20Analysis.html```
+```Click Here:```https://zualemo-xo.github.io/Suicide-HelpLine/Suicide%20Analysis.html
 
 <!---https://user-images.githubusercontent.com/61049979/113487977-cc844780-94d8-11eb-856b-9bfa93d944b2.mp4
 ![SUICIDE](https://user-images.githubusercontent.com/61049979/113488177-099d0980-94da-11eb-89a1-675f4b071031.gif)--->
@@ -35,6 +35,6 @@ A novel machine learning model runs in the back-end to predict the user’s stat
 After the completion of the Depression Test it shows whether the person is being Depressed or not and the Output will be displayed as either “Yes” or “No” based on the options entered by the User. Planning for psychometric testing through design and reducing non random error in measurement will add to the reliability and validity of instruments and increase the strength of study findings.
 
 
-## CONCLUSION: 
+## Conclusion: 
 
 This website will act as one-stop solution to help and inform users about suicide data and to analyze their state of mind. The features implemented would be useful in the long run and are both scalable and adaptable. With the suicide death toll on the rise yearly, this research and website will act as a step in the right direction towards preventing future decisions to end one’s own life.
