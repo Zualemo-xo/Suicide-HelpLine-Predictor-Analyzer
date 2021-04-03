@@ -1,4 +1,4 @@
-# Suicide-HelpLine
+# **Suicide-HelpLine**
 ## Deployed Link
 https://zualemo-xo.github.io/Suicide-HelpLine/Suicide%20Analysis.html
 
