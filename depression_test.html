@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
  <title>Depression Test</title>
@@ -26,13 +25,8 @@
   .footer
   { color:white;
   }
-
-
-
-
   </style>
-
-  <body class="dark">
+   <body class="dark body">
     <div class="jumbotron mb-0 pt-4 pb-4" style="background-color:rgb(127,197,174)">
     <div class="container1">
      <center><h1 class="display mb-0 pb-0">DEPRESSION TEST</h1></center>
@@ -48,7 +42,7 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="Suicide Analysis.html">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link active" href="About.html" >About</a>
-      <a class="nav-item nav-link active" href="speech to text.html" >Speak</a>
+      <a class="nav-item nav-link active" href="index.html" >Speak</a>
       <a class="nav-item nav-link active" href="depression_test.html" >Depression Test</a>
       <a class="nav-item nav-link active" href="Helpline.html">Helpline</a>
     </div>
@@ -56,39 +50,96 @@
     </nav>
 
 
+
+
+
 <div class="container">
-
-
-
-  <div id="watu_quiz" class="quiz-area single-page-quiz"><p></p>
-    <p>This depression test is based on the nine-item Patient Health Questionnaire (PHQ9), one of the most commonly-used tools used to measure symptoms and severity of depression.
-    A machine learning model is being used to predict the results based on the input obtained.</p>
-    <p>Completing the test can help you get a better idea of whether you might need help for depression-and suicide as a whole.</p>
-    <p><b>Choose one answer for each of the questions below. Be sure to answer all of the questions.</b></p>
-    <p>We do not keep a record of the results or any identifying information.</p>
+<!-- <style type="text/css">
+</style> -->
+<br>
+<p>This depression test is based on the nine-item Patient Health Questionnaire (PHQ9), one of the most commonly-used tools used to measure symptoms and severity of depression.
+A machine learning model is being used to predict the results based on the input obtained.</p>
+<p>Completing the test can help you get a better idea of whether you might need help for depression-and suicide as a whole.</p>
+<p><b>Choose one answer for each of the questions below. Be sure to answer all of the questions.</b></p>
+<p>We do not keep a record of the results or any identifying information.</p>
     <p><span style="color: #b01313;"><b>Over the last 2 weeks, how often have you been bothered by any of the following problems?</b></span></p>
-    <p></p><form action="" method="post" class="quiz-form" id="quiz-2">
-      <div class="watu-question" id="question-1">
-        <div class="question-content">
-          <p><span class="watu_num">1. </span>
-            <span style="color: #3366ff;"><strong>Little interest or pleasure in doing things</strong></span>
-          </p></div>
-          <p><input type="hidden" name="question_id[]" value="10"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="123"></p>
-          <div><input type="radio" name="answer-10[]" id="answer-id-123" class="answer answer-1  answerof-10" value="123">&nbsp;<label for="answer-id-123" id="answer-label-123" class=" answer label-1"><span>Not at all</span></label></div>
-          <p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="124"></p>
-          <div><input type="radio" name="answer-10[]" id="answer-id-124" class="answer answer-1  answerof-10" value="124">&nbsp;<label for="answer-id-124" id="answer-label-124" class=" answer label-1"><span>Several days</span></label></div>
-          <p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="125"></p>
-          <div><input type="radio" name="answer-10[]" id="answer-id-125" class="answer answer-1  answerof-10" value="125">&nbsp;<label for="answer-id-125" id="answer-label-125" class=" answer label-1"><span>More than half the days</span></label></div>
-          <p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="126"></p>
-          <div><input type="radio" name="answer-10[]" id="answer-id-126" class="answer answer-1  answerof-10" value="126">&nbsp;<label for="answer-id-126" id="answer-label-126" class=" answer label-1"><span>Nearly every day</span></label></div>
-          <p><input type="hidden" id="questionType1" value="radio" class="required"></p></div>
-          <div class="watu-question" id="question-2"><div class="question-content"><p><span class="watu_num">2. </span><span style="color: #3366ff;"><strong>Feeling down, depressed, or hopeless</strong></span></p></div><p><input type="hidden" name="question_id[]" value="11"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="119"></p><div><input type="radio" name="answer-11[]" id="answer-id-119" class="answer answer-2  answerof-11" value="119">&nbsp;<label for="answer-id-119" id="answer-label-119" class=" answer label-2"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="120"></p><div><input type="radio" name="answer-11[]" id="answer-id-120" class="answer answer-2  answerof-11" value="120">&nbsp;<label for="answer-id-120" id="answer-label-120" class=" answer label-2"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="121"></p><div><input type="radio" name="answer-11[]" id="answer-id-121" class="answer answer-2  answerof-11" value="121">&nbsp;<label for="answer-id-121" id="answer-label-121" class=" answer label-2"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="122"></p><div><input type="radio" name="answer-11[]" id="answer-id-122" class="answer answer-2  answerof-11" value="122">&nbsp;<label for="answer-id-122" id="answer-label-122" class=" answer label-2"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType2" value="radio" class="required"></p></div><div class="watu-question" id="question-3"><div class="question-content"><p><span class="watu_num">3. </span><span style="color: #3366ff;"><strong>Trouble falling or staying asleep, or sleeping too much</strong></span></p></div><p><input type="hidden" name="question_id[]" value="12"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="115"></p><div><input type="radio" name="answer-12[]" id="answer-id-115" class="answer answer-3  answerof-12" value="115">&nbsp;<label for="answer-id-115" id="answer-label-115" class=" answer label-3"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="116"></p><div><input type="radio" name="answer-12[]" id="answer-id-116" class="answer answer-3  answerof-12" value="116">&nbsp;<label for="answer-id-116" id="answer-label-116" class=" answer label-3"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="117"></p><div><input type="radio" name="answer-12[]" id="answer-id-117" class="answer answer-3  answerof-12" value="117">&nbsp;<label for="answer-id-117" id="answer-label-117" class=" answer label-3"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="118"></p><div><input type="radio" name="answer-12[]" id="answer-id-118" class="answer answer-3  answerof-12" value="118">&nbsp;<label for="answer-id-118" id="answer-label-118" class=" answer label-3"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType3" value="radio" class="required"></p></div><div class="watu-question" id="question-4"><div class="question-content"><p><span class="watu_num">4. </span><span style="color: #3366ff;"><strong>Feeling tired or having little energy</strong></span></p></div><p><input type="hidden" name="question_id[]" value="13"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="111"></p><div><input type="radio" name="answer-13[]" id="answer-id-111" class="answer answer-4  answerof-13" value="111">&nbsp;<label for="answer-id-111" id="answer-label-111" class=" answer label-4"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="112"></p><div><input type="radio" name="answer-13[]" id="answer-id-112" class="answer answer-4  answerof-13" value="112">&nbsp;<label for="answer-id-112" id="answer-label-112" class=" answer label-4"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="113"></p><div><input type="radio" name="answer-13[]" id="answer-id-113" class="answer answer-4  answerof-13" value="113">&nbsp;<label for="answer-id-113" id="answer-label-113" class=" answer label-4"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="114"></p><div><input type="radio" name="answer-13[]" id="answer-id-114" class="answer answer-4  answerof-13" value="114">&nbsp;<label for="answer-id-114" id="answer-label-114" class=" answer label-4"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType4" value="radio" class="required"></p></div><div class="watu-question" id="question-5"><div class="question-content"><p><span class="watu_num">5. </span><span style="color: #3366ff;"><strong>Poor appetite or overeating</strong></span></p></div><p><input type="hidden" name="question_id[]" value="14"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="107"></p><div><input type="radio" name="answer-14[]" id="answer-id-107" class="answer answer-5  answerof-14" value="107">&nbsp;<label for="answer-id-107" id="answer-label-107" class=" answer label-5"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="108"></p><div><input type="radio" name="answer-14[]" id="answer-id-108" class="answer answer-5  answerof-14" value="108">&nbsp;<label for="answer-id-108" id="answer-label-108" class=" answer label-5"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="109"></p><div><input type="radio" name="answer-14[]" id="answer-id-109" class="answer answer-5  answerof-14" value="109">&nbsp;<label for="answer-id-109" id="answer-label-109" class=" answer label-5"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="110"></p><div><input type="radio" name="answer-14[]" id="answer-id-110" class="answer answer-5  answerof-14" value="110">&nbsp;<label for="answer-id-110" id="answer-label-110" class=" answer label-5"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType5" value="radio" class="required"></p></div><div class="watu-question" id="question-6"><div class="question-content"><p><span class="watu_num">6. </span><span style="color: #3366ff;"><strong>Feeling bad about yourself – or that you are a failure or have let yourself or your family down</strong></span></p></div><p><input type="hidden" name="question_id[]" value="15"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="91"></p><div><input type="radio" name="answer-15[]" id="answer-id-91" class="answer answer-6  answerof-15" value="91">&nbsp;<label for="answer-id-91" id="answer-label-91" class=" answer label-6"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="92"></p><div><input type="radio" name="answer-15[]" id="answer-id-92" class="answer answer-6  answerof-15" value="92">&nbsp;<label for="answer-id-92" id="answer-label-92" class=" answer label-6"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="93"></p><div><input type="radio" name="answer-15[]" id="answer-id-93" class="answer answer-6  answerof-15" value="93">&nbsp;<label for="answer-id-93" id="answer-label-93" class=" answer label-6"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="94"></p><div><input type="radio" name="answer-15[]" id="answer-id-94" class="answer answer-6  answerof-15" value="94">&nbsp;<label for="answer-id-94" id="answer-label-94" class=" answer label-6"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType6" value="radio" class="required"></p></div><div class="watu-question" id="question-7"><div class="question-content"><p><span class="watu_num">7. </span><span style="color: #3366ff;"><strong>Trouble concentrating on things, such as reading the newspaper or watching television</strong></span></p></div><p><input type="hidden" name="question_id[]" value="16"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="95"></p><div><input type="radio" name="answer-16[]" id="answer-id-95" class="answer answer-7  answerof-16" value="95">&nbsp;<label for="answer-id-95" id="answer-label-95" class=" answer label-7"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="96"></p><div><input type="radio" name="answer-16[]" id="answer-id-96" class="answer answer-7  answerof-16" value="96">&nbsp;<label for="answer-id-96" id="answer-label-96" class=" answer label-7"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="97"></p><div><input type="radio" name="answer-16[]" id="answer-id-97" class="answer answer-7  answerof-16" value="97">&nbsp;<label for="answer-id-97" id="answer-label-97" class=" answer label-7"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="98"></p><div><input type="radio" name="answer-16[]" id="answer-id-98" class="answer answer-7  answerof-16" value="98">&nbsp;<label for="answer-id-98" id="answer-label-98" class=" answer label-7"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType7" value="radio" class="required"></p></div><div class="watu-question" id="question-8"><div class="question-content"><p><span class="watu_num">8. </span><span style="color: #3366ff;"><strong>Moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you have been moving around a lot more than usual</strong></span></p></div><p><input type="hidden" name="question_id[]" value="17"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="99"></p><div><input type="radio" name="answer-17[]" id="answer-id-99" class="answer answer-8  answerof-17" value="99">&nbsp;<label for="answer-id-99" id="answer-label-99" class=" answer label-8"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="100"></p><div><input type="radio" name="answer-17[]" id="answer-id-100" class="answer answer-8  answerof-17" value="100">&nbsp;<label for="answer-id-100" id="answer-label-100" class=" answer label-8"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="101"></p><div><input type="radio" name="answer-17[]" id="answer-id-101" class="answer answer-8  answerof-17" value="101">&nbsp;<label for="answer-id-101" id="answer-label-101" class=" answer label-8"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="102"></p><div><input type="radio" name="answer-17[]" id="answer-id-102" class="answer answer-8  answerof-17" value="102">&nbsp;<label for="answer-id-102" id="answer-label-102" class=" answer label-8"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType8" value="radio" class="required"></p></div><div class="watu-question" id="question-9"><div class="question-content"><p><span class="watu_num">9. </span><span style="color: #3366ff;"><strong>Thoughts that you would be better off dead or of hurting yourself in some way</strong></span></p></div><p><input type="hidden" name="question_id[]" value="18"><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="103"></p><div><input type="radio" name="answer-18[]" id="answer-id-103" class="answer answer-9  answerof-18" value="103">&nbsp;<label for="answer-id-103" id="answer-label-103" class=" answer label-9"><span>Not at all</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="104"></p><div><input type="radio" name="answer-18[]" id="answer-id-104" class="answer answer-9  answerof-18" value="104">&nbsp;<label for="answer-id-104" id="answer-label-104" class=" answer label-9"><span>Several days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="105"></p><div><input type="radio" name="answer-18[]" id="answer-id-105" class="answer answer-9  answerof-18" value="105">&nbsp;<label for="answer-id-105" id="answer-label-105" class=" answer label-9"><span>More than half the days</span></label></div><p><input type="hidden" name="answer_ids[]" class="watu-answer-ids" value="106"></p><div><input type="radio" name="answer-18[]" id="answer-id-106" class="answer answer-9  answerof-18" value="106">&nbsp;<label for="answer-id-106" id="answer-label-106" class=" answer label-9"><span>Nearly every day</span></label></div><p><input type="hidden" id="questionType9" value="radio" class="required"></p></div><div style="display:none" id="question-10"><p></p><div class="question-content"><img src="https://www.aheadpsych.com.au/wp-c0nt3nt/plugins/watu/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ...">&nbsp;Loading …</div></div><p> <input type="button" name="action" onclick="Watu.submitResult()" id="action-button" value="Submit"><br> <input type="hidden" name="no_ajax" value="0"><input type="hidden" name="quiz_id" value="2"><br> <input type="hidden" id="watuStartTime" name="start_time" value="2020-10-20 17:13:54"><br></p></form></div>
+<h4>Find Your Mood Using the Options given Below</h4>
+<br>
+<h4>0-More Than half the days</h4>
+<h4>1-Nearly everyday</h4>
+<h4>2-Not at all</h4>
+<h4>3-Several Days</h4>
+<br>
+<form action="{{ url_for('predict')}}"method="post">
+	<label style="color: #3366ff;">1.Little interest or pleasure in doing things</label>
+	<br>
+	<input type="text" id="cd1" name="qn1" placeholder="Enter your Preference">
+	<br>
+	<br>
+    <label style="color: #3366ff;">2.Feeling down, depressed, or hopeless</label>
+    <br>
+	<input type="text" id="cd2" name="qn2" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">3.Trouble falling or staying asleep, or sleeping too much</label>
+    <br>
+	<input type="text" id="cd3" name="qn3" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">4.Feeling tired or having little energy</label>
+    <br>
+	<input type="text" id="cd4" name="qn4" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">5.Poor appetite or overeating</label>
+    <br>
+	<input type="text" id="cd5" name="qn6" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">6.Feeling bad about yourself – or that you are a failure or have let yourself or your family down</label>
+    <br>
+	<input type="text" id="cd6" name="qn6" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">7.Trouble concentrating on things, such as reading the newspaper or watching television</label>
+    <br>
+	<input type="text" id="cd7" name="qn7" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">8.Moving or speaking so slowly that other people could have noticed? Or the opposite –
+		being so fidgety or restless that you have been moving around a lot more than usual</label>
+    <br>
+	<input type="text" id="cd8" name="qn8" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">9.Thoughts that you would be better off dead or of hurting yourself in some way</label>
+    <br>
+	<input type="text" id="cd9" name="qn9" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<label style="color: #3366ff;">10.How difficult have these problems made it for you at work</label>
+    <br>
+	<input type="text" id="cd10" name="qn10" placeholder="Enter your Preference">
+	<br>
+	<br>
+	<br>
+	<input type="submit" name="submit">
+</form>
+<br>
+   <br>
+ {{ prediction_text }}
 
-<p><em>This machine learning based depression test can help you identify symptoms of anxiety, their severity and to know when further assessment may be warranted.&nbsp;&nbsp;<strong>It will not provide a diagnosis</strong> – for that you need to see an appropriately qualified doctor or mental health professional.&nbsp; </em></p>
-<div id="watu-loading-result" style="display:none;"><p align="center"><img src="https://www.aheadpsych.com.au/wp-c0nt3nt/plugins/watu/loading.gif" width="16" height="16" alt="Loading" title="Loading"></p></div>
-</div>
-<div class="footer-copyright text-center py-3 bg-white text-dark">© 2020 Copyright:
-  <a href="http://www.aasra.info/"> National Suicide Care.com</a>
+<br>
+<br>
+<br>
+
+ <p><em><span style="color: #b01313;">This machine learning based depression test can help you identify symptoms of anxiety, their severity and to know when further assessment may be warranted.&nbsp;&nbsp;<strong>It will not provide a diagnosis</strong> – for that you need to see an appropriately qualified doctor or mental health professional.&nbsp;</span></em></p>
+ <div id="watu-loading-result" style="display:none;"><p align="center"><img src="https://www.aheadpsych.com.au/wp-c0nt3nt/plugins/watu/loading.gif" width="16" height="16" alt="Loading" title="Loading"></p></div>
+ </div>
+ <div class="footer-copyright text-center py-3 bg-white text-dark">© 2020 Copyright:
+   <a href="http://www.aasra.info/"> National Suicide Care.com</a>
+ </div>
 </div>
 </body>
 </html>
+
