@@ -9,7 +9,7 @@ Demo Video:
 <br>
 [![Depression Test](https://img.youtube.com/vi/vMEJO0u5ktc/0.jpg)](https://youtu.be/vMEJO0u5ktc)
 
-
+## Abstract
 Suicides are increasing at an alarming rate all over the world and it is important to reduce the number of Suicides taking place. In this project we have used Machine Learning and other ideas could provide a better solution to this problem. We have taken various dataset’s such Suicide Rates over a period of time, Suicide Reasons, Emotions of a person. These factors are trained using various ML Algorithms such as Linear Regression, K-Nearest Neighbors, Random Forest , Decision Tree to visualize and as well as predict the Suicidal Rates.
 
 As part of novelty in this project we have used Speech to Text to find the Emotions of the person and gives as the output using Emoji’s Reactions this is done using Nodejs , the second Part of novelty in this project is using Depression Test to find whether the person is Depression or not this uses Flask Framework in back-end to integrate with the front-end i.e., Web Application for  implementation ML algorithm. 
