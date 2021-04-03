@@ -1,6 +1,6 @@
 # **Suicide-HelpLine**
 ## Deployed Link
-https://zualemo-xo.github.io/Suicide-HelpLine/Suicide%20Analysis.html
+               https://zualemo-xo.github.io/Suicide-HelpLine/Suicide%20Analysis.html
 
 <!---https://user-images.githubusercontent.com/61049979/113487977-cc844780-94d8-11eb-856b-9bfa93d944b2.mp4
 ![SUICIDE](https://user-images.githubusercontent.com/61049979/113488177-099d0980-94da-11eb-89a1-675f4b071031.gif)--->
@@ -24,8 +24,8 @@ The process of building an integrated online system for handling suicide is a no
 
 ### 1.	SENTIMENT ‘SPEAK OUT’ ANALYSIS:
 
- 	The ‘Speak Out’ part is a unique approach to understand and analyse the user’s state of mind. This novel idea can be used as an online self-diagnosis available anywhere, anytime. After the user speaks his thoughts out loud, its net sentiment will be calculated. 
- 
+The ‘Speak Out’ part is a unique approach to understand and analyse the user’s state of mind. This novel idea can be used as an online self-diagnosis available anywhere, anytime. After the user speaks his thoughts out loud, its net sentiment will be calculated. 
+  	
 Loneliness is a major factor for being depressed. This led to the implementation of text to speech of the user input whose voice will act as a companion for the user during tough times. Rather than displaying the sentiment directly, a novel approach of using emoji’s was implemented. In times where texting is dominant and emoji’s are fast replacing words to convey emotions, this feature will serve as a testament to gain the comfort and trust of the user. 
  
 ### 2.	PSYCHOMETRIC TEST:
