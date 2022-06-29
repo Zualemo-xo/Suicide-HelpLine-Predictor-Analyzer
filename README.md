@@ -46,6 +46,10 @@ A novel machine learning model runs in the back-end to predict the user’s stat
 
 After the completion of the Depression Test it shows whether the person is being Depressed or not and the Output will be displayed as either “Yes” or “No” based on the options entered by the User. Planning for psychometric testing through design and reducing non random error in measurement will add to the reliability and validity of instruments and increase the strength of study findings.
 
+### 3. DASHBOARD:
+
+Although a single factor cannot be pinpointed, among the common factors leading towards taking the extreme step, some of them can be analyzed through this project. A visualization of these could give us a better understanding of the causes of their suicide. A prediction plot of the overall rate of suicides in the future years is found using regression algorithms. A culminated model was created to predict the total count of suicide based on various factors including state, age group, and Year. 
+These results would be helpful to reduce the number of suicide rates in the world and create awareness among people.
 
 ## Conclusion: 
 
