@@ -10,6 +10,18 @@
 <br>
 [![Depression Test](https://img.youtube.com/vi/vMEJO0u5ktc/0.jpg)](https://youtu.be/vMEJO0u5ktc)
 
+## Snippets of the Shiny Dashboard
+
+![image](https://user-images.githubusercontent.com/61049979/149012752-e079f6b1-56c5-40ef-bdd1-92e1cfa4ad1e.png)
+
+![image](https://user-images.githubusercontent.com/61049979/149012788-835e1ab3-20a5-43f0-b157-b1fee70d7a50.png)
+
+![image](https://user-images.githubusercontent.com/61049979/149012838-a80fc1bc-75de-4697-bcea-94fe0e6ee904.png)
+
+![image](https://user-images.githubusercontent.com/61049979/149012877-62d84d83-e89e-427f-8f05-c31df883e54d.png)
+
+![image](https://user-images.githubusercontent.com/61049979/149013165-bc518327-923d-48f8-af7c-154648ee6da8.png)
+
 ## Abstract
 Suicides are increasing at an alarming rate all over the world and it is important to reduce the number of Suicides taking place. In this project we have used Machine Learning and other ideas could provide a better solution to this problem. We have taken various dataset’s such Suicide Rates over a period of time, Suicide Reasons, Emotions of a person. These factors are trained using various ML Algorithms such as Linear Regression, K-Nearest Neighbors, Random Forest , Decision Tree to visualize and as well as predict the Suicidal Rates.
 
