@@ -1,18 +1,16 @@
 # **Suicide-HelpLine**
-## Deployed Link
-```Click Here:```  https://zualemo-xo.github.io/Suicide-HelpLine/Suicide%20Analysis.html
 
-<!---https://user-images.githubusercontent.com/61049979/113487977-cc844780-94d8-11eb-856b-9bfa93d944b2.mp4
-![SUICIDE](https://user-images.githubusercontent.com/61049979/113488177-099d0980-94da-11eb-89a1-675f4b071031.gif)--->
 ## Demo Video
-
+```Please click on the videos below:```
+<br>
+<br>
 [![Sentiment](https://img.youtube.com/vi/jqUkqITCjMA/0.jpg)](https://youtu.be/jqUkqITCjMA)
 <br>
 [![Depression Test](https://img.youtube.com/vi/vMEJO0u5ktc/0.jpg)](https://youtu.be/vMEJO0u5ktc)
 
 ## Snippets of the Shiny Dashboard
 
-![image](https://user-images.githubusercontent.com/61049979/149012752-e079f6b1-56c5-40ef-bdd1-92e1cfa4ad1e.png)
+![image](https://user-images.githubusercontent.com/61049979/149012752-e079f6b1-56c5-40ef-bdd1-92e1cfa4ad1e.png )
 
 ![image](https://user-images.githubusercontent.com/61049979/149012788-835e1ab3-20a5-43f0-b157-b1fee70d7a50.png)
 
