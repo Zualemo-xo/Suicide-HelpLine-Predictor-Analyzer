@@ -228,6 +228,7 @@
 		        } else {
 		          setEmoji('neutral')
 		        }
+			 recognition.stop();
 		      })
 		      .catch((e) => {
 		        console.error('Request error -> ', e)
