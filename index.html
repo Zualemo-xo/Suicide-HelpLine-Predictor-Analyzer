@@ -159,7 +159,8 @@
 
 		function speechToEmotion() {
 		  //const recognition = new webkitSpeechRecognition()
-		  var recognition = new SpeechRecognition();
+		var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
 		  recognition.lang = 'en-US'
 		  recognition.continuous = true
 		
