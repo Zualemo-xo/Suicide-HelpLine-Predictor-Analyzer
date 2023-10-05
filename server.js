@@ -41,7 +41,7 @@ app.get('/Images/helpline.png', function(req, res) {
   res.sendFile(path.join(__dirname, 'Images/helpline.png'))
 })
 
-app.get('Images/*', function(req, res) {
+app.get('/Images/*', function(req, res) {
   console.log(req,res);
   res.sendFile(path.join(__dirname, req))
 })
