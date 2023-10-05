@@ -37,18 +37,6 @@ app.get('/Helpline.html', function(req, res) {
 })
 
 //GET for Images
-app.get('/sentiment/style/css/emoji.css', function(req, res) {
-  res.sendFile(path.join(__dirname, req.path))
-})
-
-app.get('/sentiment/style/css/emoji.css', function(req, res) {
-  res.sendFile(path.join(__dirname, req.path))
-})
-
-app.get('/images/*', function(req, res) {
-  res.sendFile(path.join(__dirname, '/sentiment/style' + req.path))
-})
-
 app.get('/Images/*', function(req, res) {
   res.sendFile(path.join(__dirname, req.path))
 })
