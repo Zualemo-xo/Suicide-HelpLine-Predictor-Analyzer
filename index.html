@@ -203,7 +203,7 @@
                     action.innerHTML = "<small>Listening, please speak.</small>";
                 };
 
-                recognition.onend = function() {
+                recognition.onspeechend = function() {
                     action.innerHTML = "<small>Stopped listening</small>";
                     recognition.stop();
                 }
