@@ -7,6 +7,7 @@ const app = express()
 
 app.use(express.static(path.join(__dirname, 'public')))
 
+// GET for Webpages
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'))
 })
@@ -20,15 +21,24 @@ app.get('/About.html', function(req, res) {
 })
 
 app.get('/speech%20to%20text.html', function(req, res) {
-  res.sendFile(path.join(__dirname, 'speech%20to%20text.html'))
+  res.sendFile(path.join(__dirname, 'speech to text.html'))
 })
 
-app.get('/depression_test.html.html', function(req, res) {
+app.get('/depression_test.html', function(req, res) {
   res.sendFile(path.join(__dirname, 'depression_test.html'))
 })
 
 app.get('/Helpline.html', function(req, res) {
   res.sendFile(path.join(__dirname, 'Helpline.html'))
+})
+
+//GET for Images
+app.get('/Images/helpline.png', function(req, res) {
+  res.sendFile(path.join(__dirname, 'Images/helpline.png'))
+})
+
+app.get('Images/*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'Images/*'))
 })
 
 app.get('/emotion', function(req, res) {
