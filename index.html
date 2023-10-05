@@ -144,9 +144,11 @@
    </nav>
 
     <div class="container">
-    	<p><h4>We would to like hear your thoughts and feelings and this might help us to tell how much depressed or stressed and do you have an any suicidal thoughts.This Analysis will help you to get back on right track.</h4></p>
-    	<center><p><h4><b>So,Why waiting Share you thoughts!!</b></h4></p></center>
-        <center><p><h4><b>Click on the below button and speak something</b></h4></p>
+    	<p><h4>Speaking one's mind openly and honestly can be a therapeutic release, alleviating pent-up stress and anxiety. 
+		It promotes self-expression and self-awareness, contributing to improved mental well-being. 
+		This practice fosters authentic connections and emotional support, leading to a more balanced and resilient state of mind.
+	</h4></p>
+        <center><p><h4><b>Click on the button and start speaking.</b></h4></p>
         </center>
         <br>
         <p><center><button type="button" onclick="speechToEmotion()">Speak
@@ -251,10 +253,6 @@
 		
 		  recognition.onaudiostart = function() {
 		    setEmoji('listening')
-		  }
-		
-		  recognition.onend = function() {
-		    setEmoji('idle')
 		  }
 		
 		  recognition.start();
