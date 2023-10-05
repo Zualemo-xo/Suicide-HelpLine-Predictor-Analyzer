@@ -163,22 +163,28 @@
 		function speechToEmotion() {
 		var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
                 var recognition = new SpeechRecognition();
+		var output = document.getElementById("output");
+		var action = document.getElementById("action");
 		  recognition.lang = 'en-US'
 		  recognition.continuous = true
 			
 		recognition.onstart = function() {
-                    action.innerHTML = "<small>listening, please speak...</small>";
+                    action.innerHTML = "<small>Listening, please speak.</small>";
                 };
 
-                recognition.onspeechend = function() {
-                    action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                recognition.onend = function() {
+                    action.innerHTML = "<small>Stopped listening</small>";
                     recognition.stop();
                 }
 		
 		  recognition.onresult = function(event) {
 		    const results = event.results
 		    const transcript = results[results.length-1][0].transcript
-		
+			  
+                    var confidence = event.results[0][0].confidence;
+                    output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
+                    output.classList.remove("hide");
+			  
 		    setEmoji('searching')
 		
 		    fetch(`/emotion?text=${transcript}`)
