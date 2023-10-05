@@ -38,7 +38,6 @@ app.get('/Helpline.html', function(req, res) {
 
 //GET for Images
 app.get('/Images/*', function(req, res) {
-  console.log(req.path);
   res.sendFile(path.join(__dirname, req.path))
 })
 
