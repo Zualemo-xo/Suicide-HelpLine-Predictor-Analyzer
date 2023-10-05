@@ -42,7 +42,8 @@ app.get('/Images/helpline.png', function(req, res) {
 })
 
 app.get('Images/*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'Images/*'))
+  console.log(req,res);
+  res.sendFile(path.join(__dirname, req))
 })
 
 app.get('/emotion', function(req, res) {
