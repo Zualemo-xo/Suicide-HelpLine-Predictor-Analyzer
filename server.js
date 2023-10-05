@@ -24,10 +24,6 @@ app.get('/About.html', function(req, res) {
   res.sendFile(path.join(__dirname, 'About.html'))
 })
 
-app.get('/speech%20to%20text.html', function(req, res) {
-  res.sendFile(path.join(__dirname, 'speech to text.html'))
-})
-
 app.get('/depression_test.html', function(req, res) {
   res.sendFile(path.join(__dirname, 'depression_test.html'))
 })
@@ -42,8 +38,6 @@ app.get('/Images/*', function(req, res) {
 })
 
 // GET for sentiment analysis
-
-
 app.get('/emotion', function(req, res) {
   const sentiment = new Sentiment()
   const text = req.query.text
